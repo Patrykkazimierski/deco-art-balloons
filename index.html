@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DecoArt Balloons — by Julia & Beata</title>
+  <meta name="description" content="DecoArt Balloons — pastelowe dekoracje balonowe na wesela, urodziny i eventy. Realizacja przez Julia & Beata." />
+  <link rel="stylesheet" href="style.css">
+  <!-- Optional: Google Fonts if you want Inter loaded (uncomment) -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet"> -->
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">
+          <!-- You can replace this with an <img src="images/logo.png"> -->
+        </div>
+        <div class="brand-text">
+          <h1>DecoArt Balloons <small>by Julia & Beata</small></h1>
+          <p class="tag">Pastelowe dekoracje balonowe</p>
+        </div>
+      </div>
+
+      <nav class="top-nav" role="navigation" aria-label="Główne menu">
+        <a href="#services">Usługi</a>
+        <a href="#gallery">Galeria</a>
+        <a href="#facebook">Facebook</a>
+        <a href="#contact">Kontakt</a>
+      </nav>
+
+      <a class="phone" href="tel:+48123456789">+48 123 456 789</a>
+
+      <!-- mobile menu toggle (simple) -->
+      <button id="menu-toggle" aria-label="Pokaż menu" class="phone" style="display:none">Menu</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h2>Tworzymy magię z balonów — dekoracje szyte na miarę</h2>
+          <p>Pastelowe dekoracje na wesela, urodziny, eventy firmowe i sesje zdjęciowe. Kompleksowa realizacja od projektu po montaż.</p>
+
+          <div class="hero-cta">
+            <a href="#contact" class="btn">Skontaktuj się</a>
+            <a href="#gallery" class="btn ghost">Zobacz galerię</a>
+          </div>
+
+          <ul class="features" aria-hidden="true">
+            <li>Eleganckie aranżacje</li>
+            <li>Dostosowane do okazji</li>
+            <li>Transport i montaż</li>
+          </ul>
+        </div>
+
+        <div class="hero-image">
+          <img src="images/hero.jpg" alt="Pastelowe dekoracje balonowe - przykład" />
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services container">
+      <h3>Nasze usługi</h3>
+      <p>Oferujemy szeroki zakres usług dekoratorskich z balonami — od stoisk i bram, po girlandy i bukiety.</p>
+
+      <div class="cards">
+        <article class="card" aria-labelledby="srv1">
+          <img src="images/service-arches.jpg" alt="Łuk balonowy" />
+          <h4 id="srv1">Łuki i bramy</h4>
+          <p>Personalizowane łuki i bramy balonowe dopasowane do kolorystyki wydarzenia.</p>
+        </article>
+
+        <article class="card" aria-labelledby="srv2">
+          <img src="images/service-garlands.jpg" alt="Girlanda balonowa" />
+          <h4 id="srv2">Girlandy</h4>
+          <p>Girlandy w pastelowych tonacjach, idealne do sesji zdjęciowych i sal bankietowych.</p>
+        </article>
+
+        <article class="card" aria-labelledby="srv3">
+          <img src="images/service-install.jpg" alt="Instalacja dekoracyjna" />
+          <h4 id="srv3">Instalacje & dekoracje</h4>
+          <p>Duże instalacje dekoracyjne i aranżacje stołów na uroczystości.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery container">
+      <h3>Galeria</h3>
+      <p>Wybrane realizacje — kliknij, żeby powiększyć.</p>
+
+      <div class="grid">
+        <img src="images/gallery1.jpg" alt="Galeria 1">
+        <img src="images/gallery2.jpg" alt="Galeria 2">
+        <img src="images/gallery3.jpg" alt="Galeria 3">
+        <img src="images/gallery4.jpg" alt="Galeria 4">
+      </div>
+    </section>
+
+    <section id="facebook" class="container">
+      <h3>Materiały z Facebooka</h3>
+      <p>Tu osadzimy zdjęcia i filmy z Waszego fanpage'a. Jak dodać: wklej link postu / filmu w atrybucie <code>href</code> w przykładach poniżej.</p>
+
+      <div style="display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));margin-top:12px;">
+        <!-- Example: Facebook video embed (replace LINK_TO_VIDEO) -->
+        <div class="contact-card">
+          <h4>Osadź film z Facebooka</h4>
+          <!-- Replace LINK_TO_VIDEO with actual Facebook post/video URL -->
+          <iframe src="https://www.facebook.com/plugins/video.php?href=LINK_TO_VIDEO" width="100%" height="280" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          <p class="tag">Wklej link do filmu zamiast <em>LINK_TO_VIDEO</em>.</p>
+        </div>
+
+        <!-- Example: Facebook post/gallery embed (replace LINK_TO_POST) -->
+        <div class="contact-card">
+          <h4>Osadź post z Facebooka</h4>
+          <iframe src="https://www.facebook.com/plugins/post.php?href=LINK_TO_POST" width="100%" height="380" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          <p class="tag">Wklej link do postu zamiast <em>LINK_TO_POST</em>.</p>
+        </div>
+      </div>
+
+      <p style="margin-top:10px;color:var(--muted)">Uwaga: osadzenie działa jeśli posty są publiczne. Jeżeli posty są prywatne, pobierz media i umieść w folderze <code>images/</code>.</p>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h3>Kontakt</h3>
+
+      <div class="contact-grid">
+        <aside class="contact-card">
+          <h4>Skontaktuj się z nami</h4>
+          <p>Julia & Beata</p>
+          <p class="tag">E: <a href="mailto:kontakt@decoart.example">kontakt@decoart.example</a></p>
+          <p class="tag">T: <a href="tel:+48123456789">+48 123 456 789</a></p>
+
+          <h5>Godziny pracy</h5>
+          <p class="tag">Pon–Pt: 9:00–18:00</p>
+        </aside>
+
+        <form class="contact-form" action="mailto:kontakt@decoart.example" method="post" enctype="text/plain">
+          <label>
+            Twoje imię
+            <input type="text" name="name" required>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required>
+          </label>
+          <label>
+            Wiadomość
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button class="btn" type="submit">Wyślij wiadomość</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> DecoArt Balloons — Julia & Beata</div>
+      <div class="tag">Wykonane z miłością do dekoracji</div>
+    </div>
+  </footer>
+
+  <script>
+    // small script: year + mobile menu show/hide
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // show mobile menu button on small screens
+    function updateMenuToggle() {
+      const btn = document.getElementById('menu-toggle');
+      const nav = document.querySelector('.top-nav');
+      if (window.innerWidth <= 900) {
+        btn.style.display = 'inline-block';
+        nav.style.display = 'none';
+      } else {
+        btn.style.display = 'none';
+        nav.style.display = 'flex';
+      }
+    }
+    updateMenuToggle();
+    window.addEventListener('resize', updateMenuToggle);
+
+    document.getElementById('menu-toggle').addEventListener('click', () => {
+      const nav = document.querySelector('.top-nav');
+      nav.style.display = (nav.style.display === 'flex' || nav.style.display === '') ? 'none' : 'flex';
+    });
+  </script>
+</body>
+</html>
